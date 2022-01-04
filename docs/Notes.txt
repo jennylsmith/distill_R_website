@@ -1,0 +1,18 @@
+TO DO:
+
+1) create custom css for the landing page only on the body of the paragraph
+<style>
+body {
+text-align: justify}
+</style>
+
+2) Create github issues to track things like these notes 
+
+3) use github actions to automate deployment of updates as I make them. 
+
+4) convert my resume to Rmarkdown/markdown
+https://towardsdatascience.com/create-your-resume-with-pagedown-package-in-r-123ca6310d52 
+
+5) create/edit custom themes with css 
+- https://github.com/garberadamc/acg-distill 
+- the distillery

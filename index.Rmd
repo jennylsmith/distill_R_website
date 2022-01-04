@@ -1,0 +1,61 @@
+---
+title: "Jenny Leopoldina Smith"
+image: "images/balsamroot_flowers.jpeg"
+description: |
+  Bioinformatician and R programmer applying methods in data science to biomedical research questions with expertise in next generation sequencing (NGS) data.
+links:
+  - label: "github"
+    url: "https://github.com/jennylsmith"
+  - label: "linkedIn"
+    url: "https://www.linkedin.com/in/jenny-leopoldina-smith/"
+  - label: "twitter"
+    url: "https://twitter.com/JennyLeopoldina"
+output: postcards::trestles
+site: distill::distill_website
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+
+# Welcome! 
+
+I am a bioinformatician at [Fred Hutchinson Cancer Research Center](https://www.fredhutch.org/en.html) in beautiful Seattle, WA.  Currently engaged in supporting pediatric acute myeloid leukemia (AML) translational research studies using genomic and transcriptomic 'big data' from next generation sequencing. 
+
+My interests include statistical analysis of sequencing data,  visualizations for complex genomic datasets, and a personal commitment to community engagement and  outreach. 
+<br>
+
+```{r include=FALSE}
+#https://stackoverflow.com/questions/48203496/how-to-trim-a-picture-with-rmarkdown-html
+library(magick)
+
+crop <- function(im, left = 0, top = 0, right = 0, bottom = 0) {
+  d <- dim(im[[1]]); w <- d[2]; h <- d[3]
+  image_crop(im, glue::glue("{w-left-right}x{h-top-bottom}+{left}+{top}"))
+}
+cropped <- 'https://upload.wikimedia.org/wikipedia/commons/3/33/Zinc-finger-dot-plot.png' %>%
+  image_read() %>%
+  crop(top=10, left=10, right=10, bottom=10) 
+
+filename <- "images/cc_zinc_dot_plot.png"
+file.exists(filename)
+if(!file.exists(filename)){
+  image_write(cropped,path=filename, format = "png")
+}
+```
+
+```{r out.height="150px", out.width="850px"}
+#how to make this output react/fit to page width rather than hard coded size?
+knitr::include_graphics(filename)
+```
+
+

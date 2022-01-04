@@ -1,0 +1,25 @@
+---
+title: "Projects"
+description: |
+  A list of my current and former projects, both at Fred Hutch and through external collaborations, such as Hackathons. 
+author:
+  - name: Jenny Smith
+    url: https://www.linkedin.com/in/jenny-leopoldina-smith/
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Projects 
+
+
+# Selected Publications 
+
+
+
+
+

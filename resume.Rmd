@@ -1,0 +1,147 @@
+---
+title: "Resume"
+description: |
+  Resume for Jenny L. Smith
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+<!-- https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html -->
+
+:::: {style="display: flex;"}
+
+::: {}
+Here is the **first** Div.
+
+```{r}
+str(iris)
+```
+:::
+
+::: {}
+And this block will be put on the right:
+
+```{r}
+plot(iris[, -5])
+```
+:::
+
+::::
+
+### Education
+
+**Applied Bioinformatics and Genomics**, M.Sc.	June 2016 – September 2017
+University of Oregon, Eugene, OR	
+
+**Secondary Education in Science**, M.Ed.		August 2012 – May 2014                                       
+Arizona State University, Phoenix, AZ	
+
+**Biology, B.A.**, magna cum laude		¬	August 2008 – May 2012                                   
+University of San Diego, San Diego, CA	
+
+### Research and Work Experience
+
+**Bioinformatician**, Fred Hutchinson Cancer Research Center, Seattle, WA
+January 2017 – Current.                            Principal Investigator: Soheil Meshinchi
+
+*	Profiled pediatric AML subtypes including gene fusions CBFA2T3-GLIS2, NUP98 fusions, and mutations (FLT3-ITD) using multi-omic data (RNA-sequencing and miRNA-seq) with supervised and unsupervised clustering ML algorithms, as well as statistical regression and classification.  
+*	Production of complex visualizations of sequencing and mutation data including heatmaps, circos plots, oncoprints, 3D scatter plots, genomic tracks, network graphs, and volcano plots, among others to identify actionable biological insights and gene targets from multivariate biological datasets derived from NGS and public databases such as NCBI and Ensembl using R and Rmarkdown. 
+
+*	Collaborated in a multidisciplinary environment with molecular biologists, bioinformaticians, and lead investigators. These bioinformatics analyses and data visualizations utilized in 11 manuscripts published in peer reviewed journals, as well as grant applications for American Cancer Society, Saint Baldricks Foundation, Gabriella Miller Foundation, and TpAML being funded.
+
+*	Survival analysis of AML variants and application of the LSC17 prognostic score to a pediatric cohort using Kaplan-Meier estimates and Cox proportional hazards regression; resulted in oral presentation at American Society of Hematology (2017) and followed by collaborative analysis with UCSF and a current manuscript submission to Nature Communications.
+
+*	Development of genomics workflows for cloud computing on AWS using Nextflow for processing raw RNA-seq data for gene expression quantification and fusion detection.
+
+*	Experienced in complex data manipulation and interpretation using dplyr and the principles of tidyverse on large datasets derived from NGS and public database and API retrieval of data from public databases.
+
+**Postbaccalaureate Fellow**, National Institutes of Health, Bethesda, MD
+June 2014 - July 2016                                     Principal Investigator: Maria Morasso
+
+*	Conducted biomedical research on the function of homeodomain protein DLX3 at NIAMS. Bioinformatics analysis of ATAC-seq and ChIP-seq from murine mouse models using command line tools for genomic alignment, MACS peak calling, motif analysis, NGS.plot, and Deeptools.
+
+**Science Teacher**, Agua Fria High School, Avondale, AZ	
+June 2012 - May 2014
+
+*	Teach For America Phoenix corps member; certified for secondary biology and chemistry education. Courses taught: general biology, AP biology, general chemistry and integrated science.
+
+**Research Assistant**, University of San Diego, San Diego, CA
+August 2009 - May 2012                                      Principal Investigator: Terry Bird
+*	Investigated the role of CHPT in the cellular differentiation of the bacterium Rhodospirillum centenum by utilizing site-directed mutagenesis and construction of triple knockout mutants of CHPT, CTRA, and CYD2.
+	Experience with NGS Data
+*	RNA-sequencing – Illumina 
+*	RNA-sequencing – PacBio 
+*	miRNA-seq  
+*	ChIP-seq 
+* ATAC-seq
+
+### Skills 
+
+**Bioinformatics and Statistics **
+
+*	Unsupervised clustering with dendrograms, PCA, NMDS, and UMAP
+*	Statistical regression, classification, regularization
+*	Differential gene expression with Limma and EdgeR
+*	Survival and time-to-event analysis
+*	Data visualization with ggplot2, ComplexHeatmap, plotly R, and Gviz
+
+**Experience with Software**
+
+*	Github Version Control
+*	R programming: base R and Tidyverse  
+*	R package development 
+*	Bash shell scripting
+*	SLURM on-prem HPC job scheduler
+*	Amazon Web Services: AWS S3 and Batch
+*	Nextflow Bioinformatics workflows on AWS 
+*	Python programming
+*	MultiQC and FastQC for NGS quality control
+*	Genomic alignments: STAR-aligner and Bowtie
+*	Fusion detection algorithms for RNA-seq: STAR-Fusion
+*	Long-read RNA-seq (PacBio) transcriptional profiling with Isoseq3 pipeline
+*	HOMER motif analysis for  ChIP-seq
+*	Differential peak binding identification for ChIP-seq: DiffBind R
+
+**Continuing Education and Volunteering**
+
+*	SnpReportR package, Carnegie Mellon and DNAnexus Hackathon, January 2021
+*	RLadies, Seattle, WA 2018-2021 
+*	Pacific Biosciences Isoseq Transcriptome Analysis Training, July 2020
+*	Nextflow workflow development training, May 2020
+*	Women In Biology, MAPS Mentorship Group, 2017-2019
+*	ConsensusML, Machine learning classification in AML, NCBI Hackathon February 2018
+*	Fred Hutch Summer High School Internship Mentor, June-August 2018
+*	Summer Institute in Statistics for Big Data (SISBID), University of Washington, June 2017
+
+
+### Publications
+
+
+*	Huang, B., Smith, J. L., Wang, J., Taghizadeh, K., … Meshinchi, S. CBFB-MYH11 Fusion Transcripts Distinguish Acute Myeloid Leukemias with Distinct Molecular Landscapes and Outcomes. Blood Advances 2021. DOI: 10.1182/bloodadvances.2021004965
+
+*	Chisholm, K., Heerema-McKenney, A., Choi, J., Smith, J.L. … Kahwash, B. Acute erythroid leukemia is enriched in NUP98 fusions: a report from the Children’s Oncology Group. Blood Advances 2020. DOI: 10.1182/bloodadvances.2020002712
+
+*	Noort, S., Wander, P., Alonzo, T. A., Smith, J.L., … Meshinchi, S.  The clinical and biological characteristics of NUP98-KDM5A in pediatric acute myeloid leukemia. Haematologica 2020. DOI: 10.3324/haematol.2019.236745
+
+*	Smith, J. L., Ries, R. E., Hylkema, T., Alonzo, T. A, … Meshinchi, S. Comprehensive Transcriptome Profiling of Cryptic CBFA2T3-GLIS2 Fusion-positive AML Defines Novel Therapeutic Options – A COG and TARGET Pediatric AML Study. Clinical Cancer Research 2019.  DOI: 10.1158/1078-0432.CCR-19-1800
+
+*	Smith, J.L., Maden S. K., Lee,  D., Buie, R.,  … Busby, B. Consensus Machine Learning for Gene Target Selection in Pediatric AML Risk. bioRxiv 2019. DOI: 10.1101/632166
+
+*	Noort, S., Zimmermann, M., Reinhardt, D., Cuccuini, W., Pigazzi, M., Smith, J., … Zwaan, C. M. Prognostic impact of t(16;21)(p11;q22) and t(16;21)(q24;q22) in pediatric AML: a retrospective study by the I-BFM Study Group. Blood 2018. DOI: ¬¬10.1182/blood-2018-05-849059
+
+Additional Publications: https://orcid.org/0000-0003-0402-2779
+
+### Presentations
+
+*	American Society for Hematology, poster on ETS Family Transcription Factor Fusions in Childhood AML: Distinct Expression Networks and Clinical Implications (Virtual, 2021).
+*	American Society for Hematology, poster on The Transcriptomic Landscape of NUP98-Rearranged Pediatric Acute Myeloid Leukemia (Virtual, 2020).
+*	Molecular Medicine Tri-conference, panelist on AI in Genomics and Precision Medicine (San Francisco, CA, 2020).
+*	American Society for Hematology, poster on Long Non-Coding RNAs (lncRNAs) Are Highly Associated with Disease Characteristics and Outcome in Pediatric Acute Myeloid Leukemia - a COG and Tpaml Study (Orlando, FL, 2019).
+*	Brotman Baty Pediatric Sequencing Symposium, oral presentation on Long Non-coding RNAs Associate with Outcome in Pediatric Acute Myeloid Leukemia (Seattle, WA, 2019).
+*	American Society for Hematology, oral presentation on Comprehensive Transcriptome Profiling of Cryptic CBFA2T3-GLIS2 Fusion-Positive AML Defines Novel Therapeutic Options — a COG and Target Pediatric AML Study (San Diego, CA, 2018). 
+*	American Society for Hematology, oral presentation on The LSC17 Leukemic Stem Cell Signature Predicts Outcome in Pediatric Acute Myeloid Leukemia. Abstract Achievement Award Recipient (Atlanta, GA, 2017).
+	
+
