@@ -1,3 +1,58 @@
+.columnname {
+  color: black;
+  font-size: 1.4rem; 
+  font-weight: 600;
+}
+
+
+.resume-skills {
+    background-color: #F5F5F5;
+    padding: 0.5rem;
+    border: solid;
+    border-style: double;
+}
+
+.resume-experience {
+    border-top: double;
+    border-bottom: double;
+    padding: 0.1rem;
+    margin: 0 -1em;
+
+}
+
+/* cannot center align with this defined class for some reason. 
+.resume-subtitles {
+  font-weight: bold;
+  text-align: center;
+}
+
+.heatmap-item {
+  background-image: url(images/cc_zinc_dot_plot.png); 
+  background-repeat: no-repeat;  
+  background-size: cover;
+  padding: 2rem;
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       20px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        20px;
+  --hover-color:      white;
+  --bkgd-color:       #008080;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #008080;
+}
+
+
+/* personal examples
 .styleContentContainer {
   background-color: white;
   padding: 0.25rem;
@@ -18,3 +73,4 @@
 .style75PercentContent {
   padding: 1rem;
 }
+*/

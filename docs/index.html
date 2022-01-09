@@ -708,7 +708,62 @@
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below                      */
           </style>
-          <style type="text/css">.styleContentContainer {
+          <style type="text/css">.columnname {
+            color: black;
+            font-size: 1.4rem; 
+            font-weight: 600;
+          }
+
+
+          .resume-skills {
+              background-color: #F5F5F5;
+              padding: 0.5rem;
+              border: solid;
+              border-style: double;
+          }
+
+          .resume-experience {
+              border-top: double;
+              border-bottom: double;
+              padding: 0.1rem;
+              margin: 0 -1em;
+
+          }
+
+          /* cannot center align with this defined class for some reason. 
+          .resume-subtitles {
+            font-weight: bold;
+            text-align: center;
+          }
+
+          .heatmap-item {
+            background-image: url(images/cc_zinc_dot_plot.png); 
+            background-repeat: no-repeat;  
+            background-size: cover;
+            padding: 2rem;
+          }
+
+          /*-- WEBSITE HEADER + FOOTER --*/
+          /* These properties only apply to Distill sites and blogs  */
+
+          .distill-site-header {
+            --title-size:       20px;
+            --text-color:       rgba(255, 255, 255, 0.8);
+            --text-size:        20px;
+            --hover-color:      white;
+            --bkgd-color:       #008080;
+          }
+
+          .distill-site-footer {
+            --text-color:       rgba(255, 255, 255, 0.8);
+            --text-size:        15px;
+            --hover-color:      white;
+            --bkgd-color:       #008080;
+          }
+
+
+          /* personal examples
+          .styleContentContainer {
             background-color: white;
             padding: 0.25rem;
             padding-left: 25px;
@@ -727,7 +782,8 @@
 
           .style75PercentContent {
             padding: 1rem;
-          }</style>
+          }
+          */</style>
           <style type="text/css">
           /* base style */
 
@@ -896,7 +952,7 @@
           </div>
           <div class="nav-right">
           <a href="index.html">Home</a>
-          <a href="images/JLSmith_Resume_2022.pdf">Resume</a>
+          <a href="resume.html">Resume</a>
           <a href="projects.html">Projects</a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
           </div>
@@ -941,6 +997,13 @@
                       </button>
                     </a>
                   </li>
+                                    <li class="list-inline-item">
+                    <a href=https://orcid.org/0000-0003-0402-2779>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        publications ORCID
+                      </button>
+                    </a>
+                  </li>
                                   </ul>
               </div>
             </div>
@@ -953,7 +1016,9 @@
             <h1>Welcome!</h1>
             <p>I am a bioinformatician at <a href="https://www.fredhutch.org/en.html">Fred Hutchinson Cancer Research Center</a> in beautiful Seattle, WA. Currently engaged in supporting pediatric acute myeloid leukemia (AML) translational research studies using genomic and transcriptomic ‘big data’ from next generation sequencing.</p>
             <p>My interests include statistical analysis of sequencing data, visualizations for complex genomic datasets, and a personal commitment to community engagement and outreach. <br></p>
-            <p><img src="images/cc_zinc_dot_plot.png" width="850px" height="150px" /></p>
+            <div class="heatmap-item">
+
+            </div>
             </div>
           </div>
         </div>
@@ -990,6 +1055,11 @@
                       twitter
                     </button>
                   </a>
+                                    <a href=https://orcid.org/0000-0003-0402-2779>
+                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                      publications ORCID
+                    </button>
+                  </a>
                                   </div>
               </div>
             </div>
@@ -998,7 +1068,9 @@
               <h1>Welcome!</h1>
               <p>I am a bioinformatician at <a href="https://www.fredhutch.org/en.html">Fred Hutchinson Cancer Research Center</a> in beautiful Seattle, WA. Currently engaged in supporting pediatric acute myeloid leukemia (AML) translational research studies using genomic and transcriptomic ‘big data’ from next generation sequencing.</p>
               <p>My interests include statistical analysis of sequencing data, visualizations for complex genomic datasets, and a personal commitment to community engagement and outreach. <br></p>
-              <p><img src="images/cc_zinc_dot_plot.png" width="850px" height="150px" /></p>
+              <div class="heatmap-item">
+
+              </div>
               </div>
             </div>
         </div>

@@ -2120,21 +2120,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 600;
   }
 
-  .filledBackground {
-    color: black;
-    font-size: 1.4rem; 
-    font-weight: 600;
-    background-color: rgb(245,245,245);
+
+  .resume-skills {
+      background-color: #F5F5F5;
+      padding: 0.5rem;
+      border: solid;
+      border-style: double;
+  }
+
+  .resume-experience {
+      border-top: double;
+      border-bottom: double;
+      padding: 0.1rem;
+      margin: 0 -1em;
+
+  }
+
+  /* cannot center align with this defined class for some reason. 
+  .resume-subtitles {
+    font-weight: bold;
+    text-align: center;
   }
 
   .heatmap-item {
-    list-style: none; 
     background-image: url(images/cc_zinc_dot_plot.png); 
     background-repeat: no-repeat;  
     background-size: cover;
     padding: 2rem;
-    padding-left: 2rem;
-    border-radius: 5px;
   }
 
   /*-- WEBSITE HEADER + FOOTER --*/
@@ -2156,7 +2168,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
 
-  /*
+  /* personal examples
   .styleContentContainer {
     background-color: white;
     padding: 0.25rem;
@@ -2386,16 +2398,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <!-- https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html -->
 <!-- https://rstudio4edu.github.io/rstudio4edu-book/make-distill.html -->
-<div style="display: grid; grid-template-columns: 60% 40%; grid-column-gap: 15px; line-height: 1.5rem;">
-<div>
-<p><span class="columnname"> Education </span></p>
-<p><strong>Applied Bioinformatics and Genomics</strong>, MSc</p>
-<p>June 2016 – September 2017 University of Oregon, Eugene, OR</p>
-<p><strong>Secondary Education in Science</strong>, MEd</p>
-<p>August 2012 – May 2014<br />
+<div style="display: grid; grid-template-columns: 70% 30%; grid-column-gap: 15px; line-height: 1.5rem;">
+<div class="resume-experience">
+<p style="text-align: center;">
+<span class="columnname"> Education </span>
+</p>
+<p><strong>Applied Bioinformatics and Genomics</strong>, MSc <br> June 2016 - September 2017 <br> University of Oregon, Eugene, OR</p>
+<p><strong>Secondary Education in Science</strong>, MEd <br> August 2012 – May 2014<br />
 Arizona State University, Phoenix, AZ</p>
-<p><strong>Biology</strong>, BA, <em>magna cum laude</em></p>
-<p>August 2008 – May 2012<br />
+<p><strong>Biology</strong>, BA, <em>magna cum laude</em> <br> August 2008 – May 2012<br />
 University of San Diego, San Diego, CA</p>
 <p><span class="columnname"> Research and Work Experience </span></p>
 <p><strong>Bioinformatician</strong>, Fred Hutchinson Cancer Research Center, Seattle, WA January 2017 – Current Principal Investigator: Soheil Meshinchi</p>
@@ -2423,9 +2434,13 @@ Principal Investigator: Terry Bird</p>
 <li>Investigated the role of CHPT in the cellular differentiation of the bacterium Rhodospirillum centenum by utilizing site-directed mutagenesis and construction of triple knockout mutants of CHPT, CTRA, and CYD2.</li>
 </ul>
 </div>
-<div>
-<p><span class="columnname"> Skills </span></p>
-<p><strong>Experience with NGS Data</strong></p>
+<div class="resume-skills">
+<p style="text-align: center;">
+<span class="columnname"> Skills </span>
+</p>
+<p style="text-align: center;">
+<strong>Experience with</strong><br><strong>NGS Data</strong>
+</p>
 <ul>
 <li>RNA-sequencing – Illumina</li>
 <li>RNA-sequencing – PacBio</li>
@@ -2434,7 +2449,9 @@ Principal Investigator: Terry Bird</p>
 <li>ChIP-seq</li>
 <li>ATAC-seq</li>
 </ul>
-<p><strong>Bioinformatics and Statistics</strong></p>
+<p style="text-align: center;">
+<strong>Bioinformatics and Statistics</strong>
+</p>
 <ul>
 <li>Unsupervised clustering with dendrograms, PCA, NMDS, and UMAP</li>
 <li>Statistical regression, classification, regularization</li>
@@ -2442,7 +2459,9 @@ Principal Investigator: Terry Bird</p>
 <li>Survival and time-to-event analysis</li>
 <li>Data visualization with ggplot2, ComplexHeatmap, plotly R, and Gviz</li>
 </ul>
-<p><strong>Experience with Software</strong></p>
+<p style="text-align: center;">
+<strong>Experience with Software</strong>
+</p>
 <ul>
 <li>Github Version Control</li>
 <li>R programming: base R and Tidyverse<br />
@@ -2460,7 +2479,9 @@ Principal Investigator: Terry Bird</p>
 <li>HOMER motif analysis for ChIP-seq</li>
 <li>Differential peak binding identification for ChIP-seq: DiffBind R</li>
 </ul>
-<p><strong>Continuing Education and Volunteering</strong></p>
+<p style="text-align: center;">
+<strong>Continuing Education and Volunteering</strong>
+</p>
 <ul>
 <li>SnpReportR package, Carnegie Mellon and DNAnexus Hackathon, January 2021</li>
 <li>RLadies, Seattle, WA 2018-2021</li>
