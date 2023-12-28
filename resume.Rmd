@@ -1,7 +1,8 @@
 ---
-title: "Resume"
-description: |
-  Jenny Leopoldina Smith, MSc
+title: "Jenny Leopoldina Smith, MSc"
+output: 
+  html_document:
+    css: resume.css
 ---
 
 ```{r setup, include=FALSE}
@@ -11,6 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <!-- https://bookdown.org/yihui/rmarkdown-cookbook/multi-column.html -->
 <!-- https://rstudio4edu.github.io/rstudio4edu-book/make-distill.html -->
+<!-- https://emilyriederer.netlify.app/post/rmarkdown-css-tips/ -->
 
 :::: {style="display: grid; grid-template-columns: 70% 30%; grid-column-gap: 15px; line-height: 1.5rem;"}
 
@@ -21,33 +23,43 @@ knitr::opts_chunk$set(echo = FALSE)
 </p>
 
 **Applied Bioinformatics and Genomics**, MSc <br>
-June 2016 - September 2017 <br>
 University of Oregon, Eugene, OR
 
 **Secondary Education in Science**, MEd <br>
-August 2012 – May 2014                                       
 Arizona State University, Phoenix, AZ	
 
 **Biology**, BA, *magna cum laude* <br>
-August 2008 – May 2012                                   
 University of San Diego, San Diego, CA	
 
 <span class = "columnname"> Research and Work Experience </span>
 
-**Bioinformatician**, Fred Hutchinson Cancer Research Center, Seattle, WA
-January 2017 – Current
+**Computational Biologist, Senior**, Seattle Children’s, Seattle, WA
+April 2022 – current 
+Research Scientific Computing Team
+
+* Analysis and visualization of multi-sample scRNA-seq and scATAC-seq datasets with Cellranger quantification, followed by doublet detection, ambient DNA correction, dataset integration (SCANVI and Seurat v4/v5). Production of multi-omics analyses for bulk transcriptomic and single-cell datasets using dplyr and tidyverse principles.
+
+* Generation of complex visualizations include heatmaps, circos plots, oncoprints, 3D scatter plots, genomic tracks, network graphs, and volcano plots, among others, to identify actionable insights from multivariate biological datasets from NGS and public databases (ensembl, UCSC, Genomic Data Commons).
+
+* Developed and adapted reproducible genomics workflows using Nextflow and nf- core tools for RNA-seq quantification, Cut&Run, ATAC-seq, and PacBio Isoseq; enabled use of containerized software with singularity/apptainer and the PBSpro executor on a high-performance compute cluster (HPC).
+
+* Engagement in bioinformatics support by providing guidance and troubleshooting assistance at office hours and teaching internal courses.
+
+
+**Research Bioinformatics Analyst**, Fred Hutchinson Cancer Center, Seattle, WA
+January 2017 – March 2022
 Principal Investigator: Soheil Meshinchi
-
-*	Profiled pediatric AML subtypes including gene fusions CBFA2T3-GLIS2, NUP98 fusions, and mutations (FLT3-ITD) using multi-omic data (RNA-sequencing and miRNA-seq) with supervised and unsupervised clustering ML algorithms, as well as statistical regression and classification.  
-*	Production of complex visualizations of sequencing and mutation data including heatmaps, circos plots, oncoprints, 3D scatter plots, genomic tracks, network graphs, and volcano plots, among others to identify actionable biological insights and gene targets from multivariate biological datasets derived from NGS and public databases such as NCBI and Ensembl using R and Rmarkdown. 
-
-*	Collaborated in a multidisciplinary environment with molecular biologists, bioinformaticians, and lead investigators. These bioinformatics analyses and data visualizations utilized in 11 manuscripts published in peer reviewed journals, as well as grant applications for American Cancer Society, Saint Baldricks Foundation, Gabriella Miller Foundation, and TpAML being funded.
-
-*	Survival analysis of AML variants and application of the LSC17 prognostic score to a pediatric cohort using Kaplan-Meier estimates and Cox proportional hazards regression; resulted in oral presentation at American Society of Hematology (2017) and followed by collaborative analysis with UCSF and a current manuscript submission to Nature Communications.
 
 *	Development of genomics workflows for cloud computing on AWS using Nextflow for processing raw RNA-seq data for gene expression quantification and fusion detection.
 
 *	Experienced in complex data manipulation and interpretation using dplyr and the principles of tidyverse on large datasets derived from NGS and public database and API retrieval of data from public databases.
+
+*	Profiled pediatric AML subtypes including gene fusions CBFA2T3-GLIS2, NUP98 fusions, and mutations (FLT3-ITD) using multi-omic data (RNA-sequencing and miRNA-seq) with supervised and unsupervised clustering ML algorithms, as well as statistical regression and classification.  
+
+*	Collaborated in a multidisciplinary environment with molecular biologists, bioinformaticians, and lead investigators. These bioinformatics analyses and data visualizations utilized in 11 manuscripts published in peer reviewed journals, as well as grant applications for American Cancer Society, Saint Baldricks Foundation, Gabriella Miller Foundation, and TpAML being funded.
+
+*	Survival analysis of AML variants and application of the LSC17 prognostic score to a pediatric cohort using Kaplan-Meier estimates and Cox proportional hazards regression; resulted in oral presentation at American Society of Hematology (2017) and followed by collaborative analysis with UCSF. 
+
 
 **Postbaccalaureate Fellow**, National Institutes of Health, Bethesda, MD
 June 2014 - July 2016
@@ -58,7 +70,8 @@ Principal Investigator: Maria Morasso
 **Science Teacher**, Agua Fria High School, Avondale, AZ	
 June 2012 - May 2014
 
-*	Teach For America Phoenix corps member; certified for secondary biology and chemistry education. Courses taught: general biology, AP biology, general chemistry and integrated science.
+*	Teach For America Phoenix corps member; certified for secondary biology and chemistry education. 
+* Courses taught: general biology, AP biology, general chemistry and integrated science.
 
 **Research Assistant**, University of San Diego, San Diego, CA
 August 2009 - May 2012                                      
@@ -74,13 +87,29 @@ Principal Investigator: Terry Bird
 <span class = "columnname"> Skills </span>
 </p>
 
-<p style="text-align: center;">**Experience with**<br>**NGS Data**</p>
+<p style="text-align: center;">**Experience with NGS Data**</p>
 
-*	RNA-sequencing – Illumina 
-*	RNA-sequencing – PacBio 
-*	miRNA-seq  
-*	ChIP-seq 
+* RNA-seq
+  * Illumina and PacBio
+* single-cell RNA-seq
+* single-cell ATAC-seq 
 * ATAC-seq
+* miRNA-seq
+* Cut&Run and ChIP-seq
+
+<p style="text-align: center;">**Experience with Software**</p>
+
+* R programming: base R, Tidyverse, Bioconductor
+* R package development
+* R markdown and quarto
+* Bash shell scripting
+* Python programming
+* Git version control
+* Github and bitbucket
+* Nextflow and nf-core
+* PBS/SLURM HPC schedulers
+* Containerization: docker, singularity, apptainer
+* Amazon Web Services: AWS S3 and Batch
 
 <p style="text-align: center;">**Bioinformatics and Statistics**</p>
 
@@ -89,23 +118,6 @@ Principal Investigator: Terry Bird
 *	Differential gene expression with Limma and EdgeR
 *	Survival and time-to-event analysis
 *	Data visualization with ggplot2, ComplexHeatmap, plotly R, and Gviz
-
-<p style="text-align: center;">**Experience with Software**</p>
-
-*	Github Version Control
-*	R programming: base R and Tidyverse  
-*	R package development 
-*	Bash shell scripting
-*	SLURM on-prem HPC job scheduler
-*	Amazon Web Services: AWS S3 and Batch
-*	Nextflow Bioinformatics workflows on AWS 
-*	Python programming
-*	MultiQC and FastQC for NGS quality control
-*	Genomic alignments: STAR-aligner and Bowtie
-*	Fusion detection algorithms for RNA-seq: STAR-Fusion
-*	Long-read RNA-seq (PacBio) transcriptional profiling with Isoseq3 pipeline
-*	HOMER motif analysis for  ChIP-seq
-*	Differential peak binding identification for ChIP-seq: DiffBind R
 
 <p style="text-align: center;">**Continuing Education and Volunteering**</p>
 
