@@ -4,13 +4,11 @@ image: "images/balsamroot_flowers.jpeg"
 description: |
   Bioinformatician and R programmer applying methods in data science to biomedical research questions with expertise in next generation sequencing (NGS) data.
 links:
-  - label: "github"
+  - label: "<i class='fa fa-github'></i> github"
     url: "https://github.com/jennylsmith"
-  - label: "linkedIn"
+  - label: "<i class='fa fa-linkedin'></i> linkedIn"
     url: "https://www.linkedin.com/in/jenny-leopoldina-smith/"
-  - label: "twitter"
-    url: "https://twitter.com/JennyLeopoldina"
-  - label: "publications"
+  - label: "<i class='fa fa-book'></i> publications"
     url: "https://orcid.org/0000-0003-0402-2779"
   
 output: postcards::trestles
@@ -19,13 +17,6 @@ site: distill::distill_website
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
 ```
 
 
@@ -35,34 +26,5 @@ I am a computational biologist at [Seattle Children's Research Institute](https:
 
 Previously, I was supporting pediatric acute myeloid leukemia (AML) translational research studies using genomic and transcriptomic 'big data' from next generation sequencing at FHCC. 
 
-My interests include statistical analysis of genomics and transcriptomics sequencing data,  visualizations for complex genomic datasets, and community engagement and  outreach. 
 <br>
-
-```{r include=FALSE}
-#https://stackoverflow.com/questions/48203496/how-to-trim-a-picture-with-rmarkdown-html
-library(magick)
-
-crop <- function(im, left = 0, top = 0, right = 0, bottom = 0) {
-  d <- dim(im[[1]]); w <- d[2]; h <- d[3]
-  image_crop(im, glue::glue("{w-left-right}x{h-top-bottom}+{left}+{top}"))
-}
-cropped <- 'https://upload.wikimedia.org/wikipedia/commons/3/33/Zinc-finger-dot-plot.png' %>%
-  image_read() %>%
-  crop(top=10, left=10, right=10, bottom=10) 
-
-filename <- "images/cc_zinc_dot_plot.png"
-file.exists(filename)
-if(!file.exists(filename)){
-  image_write(cropped,path=filename, format = "png")
-}
-```
-
-<div class="heatmap-item">
-</div>
-
-```{r include=FALSE}
-#how to make this output react/fit to page width rather than hard coded size?
-# knitr::include_graphics(filename)
-```
-
 

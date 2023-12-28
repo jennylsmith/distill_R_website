@@ -1,0 +1,25 @@
+---
+title: "Data Visualization"
+description: |
+  Examples of my genomic data visualaztions
+author:
+  - name: Jenny L. Smith 
+date: "`r Sys.Date()`"
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web. 
+
+Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+
+
+
+
+
