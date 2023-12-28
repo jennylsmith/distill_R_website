@@ -31,9 +31,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Welcome! 
 
-I am a bioinformatician at [Fred Hutchinson Cancer Research Center](https://www.fredhutch.org/en.html) in beautiful Seattle, WA.  Currently engaged in supporting pediatric acute myeloid leukemia (AML) translational research studies using genomic and transcriptomic 'big data' from next generation sequencing. 
+I am a computational biologist at [Seattle Children's Research Institute](https://www.seattlechildrens.org/research/) (SCRI) in beautiful Seattle, WA. I support collaborative cutting edge computational analysis, as well as providing support to empower researchers to utilize the computational resources at SCRI. I am also continuously engaged in developing and adapting genomics data pipelines using [Nextflow](https://www.nextflow.io/) and [nf-core](https://nf-co.re/) tools. 
 
-My interests include statistical analysis of sequencing data,  visualizations for complex genomic datasets, and a personal commitment to community engagement and  outreach. 
+Previously, I was supporting pediatric acute myeloid leukemia (AML) translational research studies using genomic and transcriptomic 'big data' from next generation sequencing at FHCC. 
+
+My interests include statistical analysis of genomics and transcriptomics sequencing data,  visualizations for complex genomic datasets, and community engagement and  outreach. 
 <br>
 
 ```{r include=FALSE}
