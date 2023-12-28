@@ -2,4 +2,4 @@
 
 Jenny Leopoldina Smith
 
-https:/jennylsmith.github.io
+Website can be found at [jennylsmith.github.io](https://jennylsmith.github.io)
