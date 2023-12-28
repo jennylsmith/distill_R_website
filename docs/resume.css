@@ -1,21 +1,9 @@
 
 /* base variables */
 
-/* Edit the CSS properties in this file to create a custom
-   Distill theme. Only edit values in the right column
-   for each row; values shown are the CSS defaults.
-   To return any property to the default,
-   you may set its value to: unset
-   All rows must end with a semi-colon.                      */
-
-/* Optional: embed custom fonts here with `@import`          */
-/* This must remain at the top of this file.                 */
-
-
-
 html {
   /*-- Main font sizes --*/
-  --title-size:      50px;
+  --title-size:      40px;
   --body-size:       1.06rem;
   --code-size:       14px;
   --aside-size:      12px;
@@ -73,6 +61,65 @@ d-appendix {
   --bkgd-color:       #008080;
 }
 
-/*-- Additional custom styles --*/
-/* Add any additional CSS rules below                      */
 
+.columnname {
+  color: black;
+  font-size: 2rem; 
+  font-weight: 600;
+}
+
+.resume-skills {
+    background-color: #F5F5F5;
+    padding: 0.5rem;
+    border: solid;
+    border-style: double;
+}
+
+.resume-experience {
+    border-top: double;
+    border-bottom: double;
+    padding: 0.1rem;
+    margin: 0 -1em; 
+    title-size: 30px;
+    body-size: 1.5rem;
+}
+
+.ul-exp {
+  margin-bottom: 0.5em;
+}
+
+/* cannot center align with this defined class for some reason. 
+.resume-subtitles {
+  font-weight: bold;
+  text-align: center;
+}
+
+.heatmap-item {
+  background-image: url(images/cc_zinc_dot_plot.png); 
+  background-repeat: no-repeat;  
+  background-size: cover;
+  padding: 2rem;
+}
+
+/* personal examples
+.styleContentContainer {
+  background-color: white;
+  padding: 0.25rem;
+  padding-left: 25px;
+  margin-top: 28px;
+  border-radius: 5px;
+  width: 95rem;
+}
+
+.styleTwoColumnContainer {
+  display: flex;
+}
+
+.style25PercentContent {
+  flex: 1 0 auto;
+}
+
+.style75PercentContent {
+  padding: 1rem;
+}
+*/
